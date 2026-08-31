@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.pilotproject.dao.petDAO">
+    <select id="petList" resultType="com.springboot.pilotproject.dto.petDTO">
+        SELECT * FROM pet ORDER BY p_no DESC
+    </select>
+<!--	<select id="myPetList" resultType="com.springboot.pilotproject.dto.petDTO">
+	    SELECT * FROM pet WHERE o_no = #{o_no} ORDER BY p_no DESC
+	</select> -->
+	
+	<select id="petView" resultType="com.springboot.pilotproject.dto.petDTO">
+    	SELECT * FROM pet WHERE p_no = #{p_no}
+	</select>
+    <insert id="petInsert">
+        INSERT INTO pet (
+            				p_no, p_name, p_type, p_breed, p_birth,
+            				p_gender, p_neutered, p_weight, p_detail,
+            				p_image,p_reg_date, o_no
+        					)
+        VALUES (
+		        pet_seq.nextval,
+		        #{p_name},
+		        #{p_type},
+		        #{p_breed},
+		        #{p_birth},
+		        #{p_gender},
+		        #{p_neutered},
+		        #{p_weight},
+		        #{p_detail},
+		        #{p_image, jdbcType=VARCHAR},
+		        sysdate,
+		        #{o_no}
+		        )
+    </insert>
+	<delete id="petDelete">
+		delete from pet where p_no = #{p_no}
+	</delete>
+	<update id="petUpdate">
+		update pet set p_neutered=#{p_neutered},p_weight=#{p_weight},p_detail=#{p_detail},p_image=#{p_image}
+			where p_no=#{p_no}
+	</update>
+</mapper>

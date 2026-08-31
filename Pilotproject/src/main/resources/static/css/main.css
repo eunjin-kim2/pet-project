@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+/* =========================
+   전체 초기화
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   배경 (로그인과 통일)
+========================= */
+body{
+    font-family:'Malgun Gothic', sans-serif;
+    background:#f8faf5;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;   /* ⭐ 핵심 */
+    padding-top:200px;         /* ⭐ 상단 여백만 확보 */
+    min-height:100vh;
+}
+
+/* =========================
+   메인 카드
+========================= */
+.container{
+    width:600px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:30px;   /* 40 → 30 줄이기 */
+    text-align:center;
+
+    border:1px solid #e8f3d6;
+    box-shadow:0 8px 25px rgba(170, 200, 140, 0.25);
+}
+
+/* =========================
+   상단 타이틀
+========================= */
+.title-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.logo{
+    width:80px;
+    height:50px;
+}
+
+h2{
+    color:#8b7d4b;
+    margin:0;
+}
+
+/* =========================
+   구분선
+========================= */
+hr{
+    margin:10px 0;
+    border:none;
+    border-top:1px solid #e8f3d6;
+}
+
+/* =========================
+   설명 텍스트
+========================= */
+.desc{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.user-name{
+    font-size:17.5px;      /* '님 환영합니다' 크기 */
+    color:#666;
+    text-align:center;
+    margin-bottom:25px;
+    font-weight:550;
+}
+
+/* 사용자 이름 */
+.username{
+    font-size:24px;      /* 이름은 더 크게 */
+    font-weight:700;
+    color:#7cb342;
+}
+/* =========================
+   버튼 영역
+========================= */
+.btn-area{
+    margin-top:20px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    margin:5px;
+}
+
+/* =========================
+   버튼 공통 (로그인과 통일)
+========================= */
+.btn input{
+    width:150px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:600;
+    font-family:'Malgun Gothic', sans-serif;
+    letter-spacing:0.5px;
+
+    transition:0.3s;
+}
+
+/* =========================
+   버튼 색상 (로그인 테마 기반)
+========================= */
+
+/* 로그인 */
+/* 로그인 버튼 */
+.login{
+    background:#aed581;
+    color:#ffffff;
+}
+/* 회원가입 (노랑 포인트 유지) */
+.join{
+    background:#ffd54f;
+    color:#ffffff;
+}
+.login:hover{
+    background:#9ccc65;
+}
+
+.join:hover{
+    background:#ffca28;
+}
+/* 마이페이지 */
+.mypage{
+    background:#aed581;
+    color:#ffffff;
+}
+
+/* 관리자 */
+.admin{
+    background:#aed581;
+    color:#ffffff;
+}
+
+/* 로그아웃 (경고/분리) */
+.logout{
+    background:#f7c57a;
+    color:#ffffff;
+}
+/* =========================
+   hover 통일
+========================= */
+.btn input:hover{
+    transform:translateY(-2px);
+    filter:brightness(0.97);
+}
+.btn input:hover{
+    transform:translateY(-3px);
+    filter:brightness(0.95);
+    box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+.btn input:active{
+    transform:translateY(0px);
+    box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}

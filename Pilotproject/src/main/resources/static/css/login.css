@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/* =========================
+   전체 초기화
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   배경 & 중앙정렬
+========================= */
+body{
+    font-family:'Malgun Gothic', sans-serif;
+    background:#f8faf5;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;  /* ⭐ 이게 핵심 */
+    
+    min-height:100vh;
+    padding-top:200px; /* 살짝 아래 */
+}
+
+/* =========================
+   로그인 카드 (애니메이션)
+========================= */
+form{
+    background:#ffffff;
+    padding:40px;
+    border-radius:20px;
+
+    border:1px solid #e8f3d6;
+    box-shadow:0 8px 25px rgba(170, 200, 140, 0.25);
+
+    animation:loginFadeUp 0.6s ease-out;
+}
+
+/* 카드 등장 */
+@keyframes loginFadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   타이틀
+========================= */
+h3{
+    text-align:center;
+    margin-bottom:20px;
+    color:#7cb342;
+    font-size:28px;
+}
+
+/* =========================
+   table
+========================= */
+table{
+    border-collapse:collapse;
+}
+
+td{
+    padding:8px 0;
+}
+
+/* =========================
+   input (text/password)
+========================= */
+input[type="text"],
+input[type="password"]{
+    width:280px;
+    height:45px;
+    padding:0 15px;
+
+    border:1px solid #dcedc8;
+    border-radius:10px;
+    font-size:15px;
+
+    background:#fbfff4;
+    transition:0.3s;
+}
+
+/* focus 효과 */
+input[type="text"]:focus,
+input[type="password"]:focus{
+    outline:none;
+    border-color:#aed581;
+    box-shadow:0 0 0 4px rgba(174, 213, 129, 0.25);
+}
+
+/* =========================
+   버튼 공통
+========================= */
+input[type="submit"],
+input[type="button"]{
+    width:135px;
+    height:45px;
+
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:600;
+    font-family:'Malgun Gothic', sans-serif;
+    letter-spacing:0.5px;
+
+    transition:0.3s;
+}
+
+/* =========================
+   로그인 버튼
+========================= */
+input[type="submit"]{
+    background:#aed581;
+    color:#ffffff;
+    margin-right:10px;
+}
+
+/* =========================
+   회원가입 버튼
+========================= */
+input[type="button"]{
+    background:#ffd54f;
+    color:#ffffff;
+}
+
+/* =========================
+   hover 효과
+========================= */
+input[type="submit"]:hover,
+input[type="button"]:hover{
+    transform:translateY(-3px);
+    filter:brightness(0.95);
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   클릭 효과
+========================= */
+input[type="submit"]:active,
+input[type="button"]:active{
+    transform:translateY(0px);
+    box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   링크 제거
+========================= */
+a{
+    text-decoration:none;
+}

@@ -48,7 +48,7 @@
 - ERWin
 - VS Code
 - GitHub
-- Apache Tomcat
+- Apache Tomcat(WAR 배포)
 
 ---
 

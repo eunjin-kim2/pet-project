@@ -152,11 +152,12 @@ Oracle DB
 - 회원가입 시 행정안전부 제공 API를 활용한 주소 검색
 - Spring Security를 이용한 로그인 및 권한 관리
   
-![회원가입](images/회원가입2.png)
+<p>
+  <img src="images/회원가입2.png" width="48%">
+  <img src="images/주소팝업.png" width="48%">
+</p>
 
-![주소팝업](images/주소팝업.png)
-
-![로그인](images/로그인.png)
+<img src="images/로그인.png" width="60%">
 
 ---
 
@@ -171,13 +172,15 @@ Oracle DB
 
 회원정보 수정 시 비밀번호 확인 후 수정할 수 있도록 구현했습니다.
 
-![반려인페이지](images/반려인페이지.png)
+<p>
+  <img src="images/반려인페이지.png" width="48%">
+  <img src="images/반려인상세정보.png" width="48%">
+</p>
 
-![반려인상세정보](images/반려인상세정보.png)
-
-![비밀번호체크](images/비밀번호체크.png)
-
-![반려인정보수정](images/반려인정보수정.png)
+<p>
+  <img src="images/비밀번호체크.png" width="48%">
+  <img src="images/반려인정보수정.png" width="48%">
+</p>
 
 ---
 
@@ -189,7 +192,7 @@ Oracle DB
 - 반려동물 이미지 표시
 - 사진 또는 이름 클릭 시 상세정보 조회
 
-![반려동물 목록](images/게시판.png)
+<img src="images/게시판.png" width="65%">
 
 ---
 
@@ -208,7 +211,7 @@ Oracle DB
 - 상세정보
 - 반려동물 사진
 
-![반려동물 등록](images/반려동물등록.png)
+<img src="images/반려동물등록.png" width="55%">
 
 ---
 
@@ -221,9 +224,10 @@ Oracle DB
 - 반려동물 삭제
 - 사진 변경
 
-![반려동물 상세](images/반려동물상세.png)
-
-![반려동물정보수정](images/반려동물정보수정.png)
+<p>
+  <img src="images/반려동물상세.png" width="48%">
+  <img src="images/반려동물정보수정.png" width="48%">
+</p>
 
 ---
 
@@ -237,9 +241,10 @@ Oracle DB
 
 Spring Security를 이용하여 일반 회원과 관리자의 접근 권한을 구분했습니다.
 
-![관리자페이지](images/관리자페이지.png)
-
-![반려인목록](images/반려인목록.png)
+<p>
+  <img src="images/관리자페이지.png" width="48%">
+  <img src="images/반려인목록.png" width="48%">
+</p>
 
 ---
 
